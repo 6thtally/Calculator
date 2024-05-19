@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Karabo's Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Karabo's Calculator</h1>
+        <input type="text" id="display" readonly>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <button class="button" onclick="clearDisplay();">AC</button>
+                </td>
+                <td colspan="2">
+                    <button class="button" onclick="deleteLast()">DEL</button>
+                </td>
+            </tr>
+
+          <tr>
+                
+              <td><button class="button" onclick="append('7')">7</button></td>
+              <td><button class="button" onclick="append('8')">8</button></td>
+              <td><button class="button" onclick="append('9')">9</button></td>
+              <td><button class="button" onclick="append('/')">/</button></td>
+
+           </tr>
+
+           <tr>
+                
+            <td><button class="button" onclick="append('4')">4</button></td>
+            <td><button class="button" onclick="append('5')">5</button></td>
+            <td><button class="button" onclick="append('6')">6</button></td>
+            <td><button class="button" onclick="append('*')">*</button></td>
+
+         </tr>
+
+         <tr>
+                
+            <td><button class="button" onclick="append('1')">1</button></td>
+            <td><button class="button" onclick="append('2')">2</button></td>
+            <td><button class="button" onclick="append('3')">3</button></td>
+            <td><button class="button" onclick="append('-')">-</button></td>
+
+         </tr>
+
+         <tr>
+                
+            <td><button class="button" onclick="append('0')">0</button></td>
+            <td><button class="button" onclick="append('.')">.</button></td>
+            <td><button class="button" onclick="calculate()">=</button></td>
+            <td><button class="button" onclick="append('+')">+</button></td>
+
+         </tr>
+
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
